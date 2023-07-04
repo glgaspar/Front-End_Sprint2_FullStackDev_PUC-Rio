@@ -1,6 +1,6 @@
 import Select from "react-select";
 
-const FiltroSelect = ({options, chave, onChange}) => {
+const FiltroSelect = ({options, chave, onChange, multi}) => {
     // simplificando a vida passando o processamento de array para objeto para dentro do componente
 
     var optionsFiltro = options?.map((item) =>{
@@ -19,7 +19,7 @@ const FiltroSelect = ({options, chave, onChange}) => {
     return <Select 
         options={optionsFiltro}
         onChange={onChange}
-        isMulti // ativa a selecção multipla
+        isMulti={multi} // ativa a selecção multipla
         placeholder={'Todos'}
         styles={{ // forma bizarra de editar o css interno do elemento
             container:(baseStyles) => ({
