@@ -25,6 +25,7 @@ const FiltroSelect = ({options, chave, onChange, multi}) => {
             container:(baseStyles) => ({
                 ...baseStyles,       
                 maxWdth: 'auto',
+                fontSize:'12px',
             }),
             control: (baseStyles) => ({
                 ...baseStyles,                
@@ -40,7 +41,7 @@ const FiltroSelect = ({options, chave, onChange, multi}) => {
             valueContainer:(baseStyles) => ({
                 ...baseStyles,
                 minWidth:'5vw',
-                maxHeight:'4.8vh',
+                maxHeight:'4.5vh',
                 overflowY:'scroll',                                        
             }),
             multiValue:(baseStyles) => ({
