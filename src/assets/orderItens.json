@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "produto": "DIPIRONA SODICA 500MG/ML 2ML INJETAVEL GEN",
+        "vlunit": 90.0000,
+        "unid": "CX",
+        "qtd": 120.000,
+        "vltotal": 90.00
+    },
+    {
+        "id": 2,
+        "produto": "DIPIRONA SODICA 500MG/ML 2ML INJETAVEL GEN",
+        "vlunit": 0.3800,
+        "unid": "FA",
+        "qtd": 1.000,
+        "vltotal": 0.38
+    },
+    {
+        "id": 3,
+        "produto": "IMUNOGLOBULINA HUMANA - HIZENTRA  200 MG/ML 20ML 4G  C 1 (T)",
+        "vlunit": 1479.0000,
+        "unid": "CX",
+        "qtd": 7.000,
+        "vltotal": 10353.00
+    },
+    {
+        "id": 4,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 335.3500,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 335.35
+    },
+    {
+        "id": 5,
+        "produto": "CAPECITABINA 500 MG COM REV CX C/ 120 - CORRETAL",
+        "vlunit": 981.4800,
+        "unid": "CX",
+        "qtd": 480.000,
+        "vltotal": 3925.92
+    },
+    {
+        "id": 6,
+        "produto": "CLORETO DE SODIO 0,9% 500 ML CX C 20 FR",
+        "vlunit": 98.3900,
+        "unid": "CX",
+        "qtd": 20.000,
+        "vltotal": 98.39
+    },
+    {
+        "id": 7,
+        "produto": "IMUNOGLOBULINA HUMANA 0,1G/ML 100ML - PRIVIGEN",
+        "vlunit": 3728.0000,
+        "unid": "CX",
+        "qtd": 3.000,
+        "vltotal": 11184.00
+    },
+    {
+        "id": 8,
+        "produto": "INIBIDOR DE C1 ESTERASE - FP BERINERT 500 UI 10ML FA (T)",
+        "vlunit": 2550.0000,
+        "unid": "FA",
+        "qtd": 4.000,
+        "vltotal": 10200.00
+    },
+    {
+        "id": 9,
+        "produto": "MEPILEX LITE 10X10 CM CX C 5 PC",
+        "vlunit": 214.5000,
+        "unid": "CX",
+        "qtd": 50.000,
+        "vltotal": 2145.00
+    },
+    {
+        "id": 10,
+        "produto": "EXUFIBER AG+ 10 X 10 CM CX C 10 PC",
+        "vlunit": 734.4000,
+        "unid": "CX",
+        "qtd": 10.000,
+        "vltotal": 734.40
+    },
+    {
+        "id": 11,
+        "produto": "IMUNOGLOBULINA HUMANA - FP HIZENTRA 200MG/ML 5ML BR - 1G (T)",
+        "vlunit": 406.0000,
+        "unid": "FA",
+        "qtd": 6.000,
+        "vltotal": 2436.00
+    },
+    {
+        "id": 12,
+        "produto": "MEPILEX LITE 10X10 CM CX C 5 PC",
+        "vlunit": 214.5000,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 214.50
+    },
+    {
+        "id": 13,
+        "produto": "MEPILEX LITE 10X10 CM CX C 5 PC",
+        "vlunit": 214.5000,
+        "unid": "CX",
+        "qtd": 45.000,
+        "vltotal": 1930.50
+    },
+    {
+        "id": 14,
+        "produto": "MEPILEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 184.9500,
+        "unid": "CX",
+        "qtd": 5.000,
+"vltotal": 184.95
+    },
+    {
+        "id": 15,
+        "produto": "MEPILEX BORDER SACRUM 16X20 CM CX C 5 PC - MOLNLYCKE",
+        "vlunit": 630.5900,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 630.59
+    },
+    {
+        "id": 16,
+        "produto": "MEPILEX BORDER FLEX 12,5 X 12,5 CM CX C 5 PC",
+        "vlunit": 418.4200,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 418.42
+    },
+    {
+        "id": 17,
+        "produto": "INIBIDOR DE C1 ESTERASE - FP BERINERT 500 UI 10ML FA (T)",
+        "vlunit": 3060.0000,
+        "unid": "CX",
+        "qtd": 1.000,
+        "vltotal": 3060.00
+    },
+    {
+        "id": 18,
+        "produto": "BICALUTAMIDA 50 MG COM REV CX C/ 30",
+        "vlunit": 66.0000,
+        "unid": "CX",
+        "qtd": 150.000,
+        "vltotal": 330.00
+    },
+    {
+        "id": 19,
+        "produto": "MEPILEX BORDER FLEX 15 X 20 CM CX C 5 PC",
+        "vlunit": 762.5000,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 762.50
+    },
+    {
+        "id": 20,
+        "produto": "ACETATO ABIRATERONA CP 250 MG CX C/ 120 MATIZ",
+        "vlunit": 4500.0000,
+        "unid": "CX",
+        "qtd": 120.000,
+        "vltotal": 4500.00
+    },
+    {
+        "id": 21,
+        "produto": "MESALT 10 X 10 CM CX C 30 PC",
+        "vlunit": 458.0000,
+        "unid": "CX",
+        "qtd": 30.000,
+        "vltotal": 458.00
+    },
+    {
+        "id": 22,
+        "produto": "EXUFIBER AG+ 10 X 10 CM CX C 10 PC",
+        "vlunit": 734.4000,
+        "unid": "CX",
+        "qtd": 10.000,
+        "vltotal": 734.40
+    },
+    {
+        "id": 23,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 385.3500,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 385.35
+    },
+    {
+        "id": 24,
+        "produto": "MEPILEX BORDER HEEL 22X23 CM CX C 6 PC CX C\\ 6 PC",
+        "vlunit": 1296.0000,
+        "unid": "CX",
+        "qtd": 6.000,
+        "vltotal": 1296.00
+    },
+    {
+        "id": 25,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 38.8200,
+        "unid": "PC",
+        "qtd": 3.000,
+        "vltotal": 116.46
+    },
+    {
+        "id": 26,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 335.3500,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 335.35
+    },
+    {
+        "id": 27,
+        "produto": "MEPILEX LITE 10X10 CM CX C 5 PC",
+        "vlunit": 212.5000,
+        "unid": "CX",
+        "qtd": 20.000,
+        "vltotal": 850.00
+    },
+    {
+        "id": 28,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 335.3500,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 335.35
+    },
+    {
+        "id": 29,
+        "produto": "EXUFIBER AG+ 10 X 10 CM CX C 10 PC",
+        "vlunit": 361.4000,
+        "unid": "CX",
+        "qtd": 20.000,
+        "vltotal": 722.80
+    },
+    {
+        "id": 30,
+        "produto": "MESALT 10 X 10 CM CX C 30 PC",
+        "vlunit": 15.6300,
+        "unid": "PC",
+        "qtd": 10.000,
+        "vltotal": 156.30
+    },
+    {
+        "id": 31,
+        "produto": "INIBIDOR DE C1 ESTERASE - FP BERINERT 500 UI 10ML FA",
+        "vlunit": 2925.0000,
+        "unid": "CX",
+        "qtd": 3.000,
+        "vltotal": 8775.00
+    },
+    {
+        "id": 32,
+        "produto": "MESALT 10 X 10 CM CX C 30 PC",
+        "vlunit": 15.6300,
+        "unid": "PC",
+        "qtd": 10.000,
+        "vltotal": 156.30
+    },
+    {
+        "id": 33,
+        "produto": "EXUFIBER AG+ 10 X 10 CM CX C 10 PC",
+        "vlunit": 490.0000,
+        "unid": "CX",
+        "qtd": 20.000,
+        "vltotal": 980.00
+    },
+    {
+        "id": 34,
+        "produto": "MESALT 10 X 10 CM CX C 30 PC",
+        "vlunit": 18.1900,
+        "unid": "PC",
+        "qtd": 10.000,
+        "vltotal": 181.90
+    },
+    {
+        "id": 35,
+        "produto": "MEPIFORM 10 X 18 CM CX C 5 PC",
+        "vlunit": 104.2500,
+        "unid": "PC",
+        "qtd": 4.000,
+        "vltotal": 417.00
+    },
+    {
+        "id": 36,
+        "produto": "DISPOSITIVO IRRIG PARA USO EM FRASCOS TRANSOFIX N",
+        "vlunit": 4.0900,
+        "unid": "EMB",
+        "qtd": 20.000,
+        "vltotal": 81.80
+    },
+    {
+        "id": 36,
+        "produto": "CLORETO DE SODIO 0,9% 500 ML CX C 20 FR",
+        "vlunit": 136.0000,
+        "unid": "CX",
+        "qtd": 20.000,
+        "vltotal": 136.00
+    },
+    {
+        "id": 37,
+        "produto": "MEPILEX BORDER FLEX 10 X 10 CM CX C 5 PC",
+        "vlunit": 66.3600,
+        "unid": "PC",
+        "qtd": 1.000,
+        "vltotal": 66.36
+    },
+    {
+        "id": 37,
+        "produto": "PRONTOSAN SOLUCAO IRRIG DE FERIDAS 350 ML EMB C 1 FR B BRAUN",
+        "vlunit": 167.7700,
+        "unid": "EMB",
+        "qtd": 1.000,
+        "vltotal": 167.77
+    },
+    {
+        "id": 37,
+        "produto": "EXUFIBER AG+ 10 X 10 CM CX C 10 PC",
+        "vlunit": 62.5300,
+        "unid": "PC",
+        "qtd": 1.000,
+        "vltotal": 62.53
+    },
+    {
+        "id": 38,
+        "produto": "MEPILEX BORDER LITE 10 X 10 CM CX C 5 PC",
+        "vlunit": 43.3600,
+        "unid": "PC",
+        "qtd": 3.000,
+        "vltotal": 130.08
+    },
+    {
+        "id": 39,
+        "produto": "MEPILEX BORDER LITE 10 X 10 CM CX C 5 PC",
+        "vlunit": 49.0400,
+        "unid": "PC",
+        "qtd": 3.000,
+        "vltotal": 147.12
+    },
+    {
+        "id": 40,
+        "produto": "LETROZOL 2,5MG CP CX C 30 - NATCORFARMA",
+        "vlunit": 58.4900,
+        "unid": "CX",
+        "qtd": 60.000,
+        "vltotal": 116.98
+    },
+    {
+        "id": 41,
+        "produto": "MEPIFORM 4X30 CM CX C 5 PC",
+        "vlunit": 410.7400,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 410.74
+    },
+    {
+        "id": 42,
+        "produto": "CANABIDIOL 34,36MG/ML 30ML CX C 1 FR",
+        "vlunit": 672.5300,
+        "unid": "FR",
+        "qtd": 2.000,
+        "vltotal": 1345.06
+    },
+    {
+        "id": 43,
+        "produto": "MEPILEX BORDER FLEX 12,5 X 12,5 CM CX C 5 PC",
+        "vlunit": 76.6600,
+        "unid": "PC",
+        "qtd": 1.000,
+        "vltotal": 76.66
+    },
+    {
+        "id": 44,
+        "produto": "RIFAXIMINA 550 MG COM REV CX C 28 CP XIFAXAN",
+        "vlunit": 560.8500,
+        "unid": "CX",
+        "qtd": 56.000,
+        "vltotal": 1121.70
+    },
+    {
+        "id": 45,
+        "produto": "RIFAXIMINA 550 MG COM REV CX C 28 CP XIFAXAN",
+        "vlunit": 533.2200,
+        "unid": "CX",
+        "qtd": 56.000,
+        "vltotal": 1066.44
+    },
+    {
+        "id": 46,
+        "produto": "DUPIXENT DUPILUMABE 150MG/ML X 2ML X 2 SERINGAS (T)",
+        "vlunit": 8490.0000,
+        "unid": "CX",
+        "qtd": 14.000,
+        "vltotal": 59430.00
+    },
+    {
+        "id": 47,
+        "produto": "MEPILEX BORDER FLEX 12,5 X 12,5 CM CX C 5 PC",
+        "vlunit": 351.7000,
+        "unid": "CX",
+        "qtd": 5.000,
+        "vltotal": 351.70
+    }
+]
