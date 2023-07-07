@@ -1,92 +1,108 @@
-import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import TabelaSimples from "../components/Tabelas/TabelaSimples";
-import FiltrosSelect from "../components/Filtros/FIltroSelect";
+import FiltroSelect from "../components/Filtros/FIltroSelect";
 import BttnPadrao from "../components/Botoes/BttnPadrao";
-import data from "../data/orders.json";
+
+import clientes from "../assets/clientes.json";
+// import data from "../data/orders.json";
 
 export default function Home() {
-	const [compras, setCompras] = useState(data);
-	const [filtroProduto, setFiltroProduto] = useState([]);
-	const [filtroCliente, setFiltroCliente] = useState([])
-    const [filtroEstado, setFiltroEstado] = useState([])
+	const [compras, setCompras] = useState([]);
+	const [filtroCliente, setFiltroCliente] = useState([]);
+	const [filtroEstado, setFiltroEstado] = useState([]);
 
-	let navigate = useNavigate(); 
-    const routePedido = (props) => {
-		const path = `/detalhe?${props.id}`
-        navigate(path);
-    };
+	useEffect(() => {
+		// consulta no backend seria feita aqui para definir os pedidos
+		const data = require("../assets/orders.json")
+		setCompras(data)
+	}, []);
+
+	let navigate = useNavigate();
+	const routePedido = (props) => {
+		const path = `/detalhe?${props.id}`;
+		navigate(path);
+	};
 
 	const head = {
 		id: "ID",
 		cliente: "Cliente",
 		valor: "Valor",
 		data: "Data",
+		receita: "Receita",
+		UF: "UF",
 	};
 
 	function camadaFiltro() {
-        let array = compras
+		let array = compras;
+		if (filtroCliente.length > 0) {
+			array = array?.filter((item) => {
+				return filtroCliente.find((filtro) => {
+					return item.cliente === filtro.value;
+				});
+			});
+		}
+		if (filtroEstado.length > 0) {
+			array = array?.filter((item) => {
+				return filtroEstado.find((filtro) => {
+					return item.UF === filtro.value;
+				});
+			});
+		}
+		return array;
+	}
 
-        if (filtroProduto.length >0){
-            array = array?.filter((item) => {
-                return filtroProduto.find((filtro)=>{
-                    return item.produto === filtro.value
-                })
-            })
-        }
-        if (filtroCliente.length >0){
-            array = array?.filter((item) => {
-                return filtroCliente.find((filtro)=>{
-                    return item.cliente === filtro.value
-                })
-            })
-        }
-        if (filtroEstado.length >0){
-            array = array?.filter((item) => {
-                return filtroEstado.find((filtro)=>{
-                    return item.estao === filtro.value
-                })
-            })
-        }
-        return array
-    }
-
-    const obj = camadaFiltro()
+	const obj = camadaFiltro();
 
 	return (
-		<div className="m-5 grid grid-cols-12 gap-5 col-start-2 col-end-11">
-			<div className="col-span-6 grid grid-cols-6 gap-5 col-start-2">
+		<div className="m-5 grid lg:grid-cols-12 sm:grid-cols-4 gap-5 lg:col-start-2 lg:col-end-11 ">
+			<div className="lg:col-span-6 sm:col-span-4 grid lg:grid-cols-6 sm:grid-cols-4 gap-5 lg:col-start-2 sm:m-5">
 				<div className="col-span-2">
-					<FiltrosSelect
-						options={[]}
-						chave={"Produto"}
-						onChange={setFiltroProduto}
-					/>
-				</div>
-				<div className="col-span-2">
-					<FiltrosSelect
-						options={[]}
-						chave={"Produto"}
+					<FiltroSelect
+						multi={true}
+						options={clientes}
+						chave={"cliente"}
 						onChange={setFiltroCliente}
 					/>
 				</div>
 				<div className="col-span-2">
-					<FiltrosSelect
-						options={[]}
-						chave={"Produto"}
+					<FiltroSelect
+						multi={true}
+						options={[{ estado: "SP" }, { estado: "RJ" }]}
+						chave={"estado"}
 						onChange={setFiltroEstado}
 					/>
 				</div>
 			</div>
-			<div className="col-span-6">
-				{compras && <TabelaSimples dados={obj.filter(i=>i.status ===0)} head={head} altura="60vh" onClick={routePedido} />}
+			<div className="lg:col-span-5 lg:col-start-2 sm:col-span-4 sm:m-5">
+				{compras && (
+					<div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
+						<h5 className="text-center lg:text-lg lg:mb-5">Inseridos</h5>
+						<TabelaSimples
+							dados={obj.filter((i) => i.status === "NÃO")}
+							head={head}
+							altura="35vh"
+							onClick={routePedido}
+						/>
+					</div>
+				)}
 			</div>
-            <div className="col-span-6">
-				{compras && <TabelaSimples dados={obj.filter(i=>i.status ===1)} head={head} altura="60vh" onClick={routePedido} />}
+			<div className="lg:col-span-5 sm:col-span-4 sm:m-5">
+				{compras && (
+					<div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
+						<h5 className="text-center lg:text-lg lg:mb-5">Pagos</h5>
+						<TabelaSimples
+							dados={obj.filter((i) => i.status === "SIM")}
+							head={head}
+							altura="35vh"
+							onClick={routePedido}
+						/>
+					</div>
+				)}
 			</div>
-            <div className="col-span-6 grid grid-cols-6 gap-5 col-start-6">
-                <BttnPadrao texto="Novo Pedido" onClick={()=>navigate('/new')} />
-            </div>
+			<div className="lg:col-span-6 grid lg:grid-cols-6 gap-5 lg:col-start-6">
+				<BttnPadrao texto="Novo Pedido" onClick={() => navigate("/novo")} />
+			</div>
 		</div>
 	);
 }
