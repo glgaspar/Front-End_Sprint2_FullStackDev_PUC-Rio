@@ -59,8 +59,8 @@ function Pedido() {
     }
 
 	return (
-		<div className="m-5 grid lg:grid-cols-12 sm:grid-cols-4 gap-5 lg:col-start-2 lg:col-end-11 sm:m-5">
-			<div className="lg:col-span-5 sm:col-span-5 lg:col-start-2 h-50 bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
+		<div className="m-5 grid md:grid-cols-12 sm:grid-cols-4 gap-5 md:col-start-2 md:col-end-11 sm:m-5">
+			<div className="md:col-span-5 sm:col-span-5 md:col-start-2 h-50 bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
 				<h3 className="text-center text-xl mb-2">
 					Pedido Nº: {numPed}
 					{dados?.status === 0 && <label
@@ -77,7 +77,7 @@ function Pedido() {
 					</label>}
 				</h3>
 				<hr className="border-accent-orange" />
-				<div className="mt-5 mb-5 lg:grid lg:grid-cols-2 lg:gap-5">
+				<div className="mt-5 mb-5 md:grid md:grid-cols-2 md:gap-5">
 					<div>
 						<p className="mt-3">Cliente: {dados && dados.cliente}</p>
 						<p className="mt-3">Data: {dados && dados.data}</p>
@@ -91,23 +91,24 @@ function Pedido() {
 				</div>
 				<hr className="border-accent-orange" />
 				<h3 className="text-center text-xl mb-5 mt-5">Itens:</h3>
-				<div className="lg:m-3">
+				<div className="md:m-3">
 					{itens &&
 						itens.map((item, index) => <CardItem data={item} key={index} />)}
 				</div>
 			</div>
-			<div className="lg:col-span-5 sm:col-span-4 lg:col-start-7 grid lg:grid-cols-5 sm:grid-cols-4 h-50 p-5">
-				<div className="lg:col-span-6 grid lg:grid-cols-6 sm:col-span-4 sm:grid-cols-4 lg:gap-5 sm:mb-10">
+			<div className="md:col-span-5 sm:col-span-4 md:col-start-7 grid md:grid-cols-5 sm:grid-cols-4 h-50 p-5">
+				<div className="md:col-span-6 grid md:grid-cols-6 sm:col-span-4 sm:grid-cols-4 md:gap-5 sm:mb-10">
 					<BttnPadrao texto="Novo Pedido" onClick={() => navigate("/novo")} />
 				</div>
 				{dados && (
 					<>						
-						<div className="lg:col-span-5 sm:col-span-4 lg:mt-10">
+					<div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid lg:col-span-5 sm:col-span-4 lg:mt-5  mt-5">
+						<h5 className="text-center lg:text-lg mb-5">Outros pedidos desse cliente</h5>
 							<TabelaSimples
 								dados={camadaFiltro(data).filter((i) => i.cliente === dados.cliente)}
 								head={head}
 								onClick={routePedido}
-								altura="60vh"
+								altura="50vh"
 							/>
 						</div>
 					</>
