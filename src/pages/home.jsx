@@ -55,10 +55,11 @@ export default function Home() {
 	const obj = camadaFiltro();
 
 	return (
-		<div className="m-5 grid lg:grid-cols-12 sm:grid-cols-4 gap-5 lg:col-start-2 lg:col-end-11 ">
-			<div className="lg:col-span-6 sm:col-span-4 grid lg:grid-cols-6 sm:grid-cols-4 gap-5 lg:col-start-2 sm:m-5">
+		<div className="m-5 grid md:grid-cols-12 grid-cols-4 gap-5 md:col-start-2 md:col-end-11 ">
+			<div className="md:col-span-6 col-span-4 grid md:grid-cols-6 grid-cols-4 gap-5 md:col-start-2 m-5">
 				<div className="col-span-2">
 					<FiltroSelect
+						placeholder="Clientes"
 						multi={true}
 						options={clientes}
 						chave={"cliente"}
@@ -67,6 +68,7 @@ export default function Home() {
 				</div>
 				<div className="col-span-2">
 					<FiltroSelect
+						placeholder="Estado"
 						multi={true}
 						options={[{ estado: "SP" }, { estado: "RJ" }]}
 						chave={"estado"}
@@ -74,10 +76,10 @@ export default function Home() {
 					/>
 				</div>
 			</div>
-			<div className="lg:col-span-5 lg:col-start-2 sm:col-span-4 sm:m-5">
+			<div className="md:col-span-5 md:col-start-2 col-span-4 m-5">
 				{compras && (
 					<div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
-						<h5 className="text-center lg:text-lg lg:mb-5">Inseridos</h5>
+						<h5 className="text-center md:text-lg md:mb-5">Inseridos</h5>
 						<TabelaSimples
 							dados={obj.filter((i) => i.status === "NÃO")}
 							head={head}
@@ -87,10 +89,10 @@ export default function Home() {
 					</div>
 				)}
 			</div>
-			<div className="lg:col-span-5 sm:col-span-4 sm:m-5">
+			<div className="md:col-span-5 col-span-4 m-5">
 				{compras && (
 					<div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
-						<h5 className="text-center lg:text-lg lg:mb-5">Pagos</h5>
+						<h5 className="text-center md:text-lg md:mb-5">Pagos</h5>
 						<TabelaSimples
 							dados={obj.filter((i) => i.status === "SIM")}
 							head={head}
@@ -100,7 +102,7 @@ export default function Home() {
 					</div>
 				)}
 			</div>
-			<div className="lg:col-span-6 grid lg:grid-cols-6 gap-5 lg:col-start-6">
+			<div className="md:col-span-6 grid md:grid-cols-6 gap-5 md:col-start-6">
 				<BttnPadrao texto="Novo Pedido" onClick={() => navigate("/novo")} />
 			</div>
 		</div>
