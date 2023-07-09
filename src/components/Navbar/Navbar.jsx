@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "./logo192.png"
 function Navbar() {
 	
 	return (
@@ -13,7 +13,7 @@ function Navbar() {
 					</div>
 					<div className="col-span-3 ml-auto mr-0">
 						<Link to="/home">
-							<img src="" className="h-[7vh]" alt="logo" />
+							<img src={logo} className="h-[5vh]" alt="logo" />
 						</Link>
 					</div>
 					

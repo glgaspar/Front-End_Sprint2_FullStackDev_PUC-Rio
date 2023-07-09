@@ -21,7 +21,7 @@ const FiltroSelect = ({options, chave, onChange, multi, placeholder}) => {
         onChange={onChange}
         isMulti={multi} // ativa a selecção multipla
         placeholder={placeholder}
-        styles={{ // forma bizarra de editar o css interno do elemento
+        styles={{ 
             container:(baseStyles) => ({
                 ...baseStyles,       
                 maxWdth: 'auto',
@@ -42,7 +42,7 @@ const FiltroSelect = ({options, chave, onChange, multi, placeholder}) => {
                 ...baseStyles,
                 minWidth:'5vw',
                 maxHeight:'4.5vh',
-                overflowY:'scroll',                                        
+                overflowY:multi? 'scroll' : 'hidden',                                        
             }),
             multiValue:(baseStyles) => ({
                 ...baseStyles,                
@@ -77,6 +77,7 @@ const FiltroSelect = ({options, chave, onChange, multi, placeholder}) => {
                 ...baseStyles,
                 position:'absolute',
                 top:'-3px',
+                color:'#025373ca'
             }),             
         }}
     />
