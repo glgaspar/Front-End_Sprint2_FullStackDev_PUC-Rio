@@ -76,7 +76,7 @@ export default function NewOrder() {
 					<div name="div" className="md:col-span-2 grid">
 						<label htmlFor="Medico">Médico:</label>
 						<input
-							className="border border-solid w-4/5"
+							className="p-2 rounded-lg border border-solid w-4/5"
 							name="Medico"
 							type="text"
 							value={nomeMedico}
@@ -86,7 +86,7 @@ export default function NewOrder() {
 					<div name="div" className="md:col-span-2 grid">
 						<label htmlFor="CRM">CRM:</label>
 						<input
-							className="border border-solid w-4/5"
+							className="p-2 rounded-lg border border-solid w-4/5"
 							name="CRM"
 							type="text"
 							value={nCrm}
@@ -112,7 +112,7 @@ export default function NewOrder() {
 							className="text-sm col-span-2 p-3 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange"
 						>
 							<input
-								className="hidden"
+								className="p-2 rounded-lg hidden"
 								id={"Receita"}
 								type="file"
 								onChange={(e) => {
@@ -155,7 +155,7 @@ export default function NewOrder() {
 						<label htmlFor="Quantidade">
 							Quantidade:
 							<input
-								className="w-4/5 border border-solid"
+								className="p-2 rounded-lg w-4/5 border border-solid"
 								mame="Quantidade"
 								type="number"
 								value={qtd}
@@ -167,7 +167,7 @@ export default function NewOrder() {
 						<label htmlFor="Valor">
 							Valor Unitário:
 							<input
-								className="w-4/5 border border-solid"
+								className="p-2 rounded-lg w-4/5 border border-solid"
 								mame="Valor"
 								type="number"
 								step={0.0001}
