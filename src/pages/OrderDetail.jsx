@@ -63,7 +63,7 @@ function Pedido() {
 			<div className="md:col-span-5 sm:col-span-5 md:col-start-2 h-50 bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
 				<h3 className="text-center text-xl mb-2">
 					Pedido Nº: {numPed}
-					{dados?.status === 0 && <label
+					{dados?.status === "NÃO" && <label
 						htmlFor={"Receita"}
 						className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange"
 					>
