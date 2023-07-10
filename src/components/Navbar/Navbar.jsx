@@ -1,23 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { IconContext } from "react-icons";
+import * as Io from "react-icons/io5"
+import { Link, useNavigate } from "react-router-dom";
 import logo from "./logo192.png"
 function Navbar() {
+
+	const pathnname  = window.location.pathname
+
+	const navigate = useNavigate()
 	
 	return (
 		<>
+			<IconContext.Provider value={{ color: "#ffffff" }}>
 				<div className="grid grid-cols-9 bg-main-blue">
 					<div className="p-1 col-span-2">
 						<div className="text-[2rem] cursor-pointer">
-							{/* <FaIcons.FaBars onClick={showSidebar} /> */}
+							{pathnname !== '/home' && <Io.IoArrowBackSharp onClick={()=>navigate('/home')} />}
 						</div>
 					</div>
-					<div className="col-span-3 ml-auto mr-0">
+					<div className="col-span-2"></div>
+					<div className="col-span-1 ml-auto mr-auto">
 						<Link to="/home">
-							<img src={logo} className="h-[5vh]" alt="logo" />
+							<img src={logo} className="h-[6vh]" alt="logo" />
 						</Link>
 					</div>
 					
 				</div>
+			</IconContext.Provider>
 		</>
 	);
 }
