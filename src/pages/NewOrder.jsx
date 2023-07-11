@@ -3,6 +3,7 @@ import BttnPadrao from "../components/Botoes/BttnPadrao";
 import FiltroSelect from "../components/Filtros/FIltroSelect";
 import { useNavigate } from "react-router-dom";
 import CardItem from "../components/CardItem/CardItem";
+import toast from "react-hot-toast";
 
 import clientes from "../assets/clientes.json";
 import listaItens from "../assets/itens.json";
@@ -42,14 +43,15 @@ export default function NewOrder() {
 					medico: nomeMedico,
 					crm: nCrm,
 					cliente: cliente.value,
-					receita: receita.target.value || null,
+					receita: receita || null,
 					itens: itens,
 				};
-				alert("Confirmado");
+
+				toast.success("Pedido cadastrado com sucesso!");
 				console.log(newOrder);
 				navigate("/home");
 			} 
-			else{alert('Dados necessários não foram preenchidos.')}
+			else{toast.error('Dados necessários não foram preenchidos.')}
 		}
 		else if (flag === 0) {
 			console.log("Cancelado");
@@ -115,6 +117,7 @@ export default function NewOrder() {
 								className="p-2 rounded-lg hidden"
 								id={"Receita"}
 								type="file"
+								accept=".jpg,.jpeg,.png,.pdf" 
 								onChange={(e) => {
 									setReceita(e);
 								}}
