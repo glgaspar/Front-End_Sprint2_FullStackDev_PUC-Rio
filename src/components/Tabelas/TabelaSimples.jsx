@@ -35,18 +35,16 @@ function TabelaSimples(props){
             sortOrder,
             columnKey,
             sortKey,
-            onClick,
         }) {
         return (
             <button
-            onClick={onClick}
             className={
                 sortKey === columnKey && sortOrder === "desc"
                 ? classes['sort-button'] + " " + classes['sort-reverse']
                 : classes['sort-button']
             }
             >
-            ▲
+            {sortKey === columnKey ? "▲" : ""}
             </button>
         );
         }
@@ -111,11 +109,10 @@ function TabelaSimples(props){
                         <tr>
                             {
                                 dadoTabela[0] && colunas.map((titulo, index) => 
-                                    <th key={index}>
+                                    <th key={index} onClick={() => changeSort(titulo)}>
                                         { props.head[titulo]}
                                         <SortButton
-                                            columnKey={titulo}
-                                            onClick={() => changeSort(titulo)}
+                                            columnKey={titulo}                                            
                                             {...{
                                                 sortOrder,
                                                 sortKey,
