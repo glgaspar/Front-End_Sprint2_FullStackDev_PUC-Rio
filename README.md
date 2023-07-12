@@ -23,4 +23,4 @@ Para iniciar o serviço em http://localhost:3000 é necessário executar o coman
 Ambos os comandos de instalação de dependências e execução devem ser executados no diretório raiz da aplicação.
 
 ## Sobre os dados
-Nenhum dado presente representa uma venda real. Os dados foram gerados com o uso do ChatGPT apenas a atividade proposta no curso.
+Nenhum dado presente representa uma venda real. Os dados foram gerados com o uso do ChatGPT para a atividade proposta no curso.
