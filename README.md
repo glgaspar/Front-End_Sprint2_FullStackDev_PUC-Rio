@@ -1,8 +1,10 @@
 # Front-End Sprint2 - FullStack Dev (PUC-Rio)
 
-Single page application feita para o Front-end do sprint 1 da Pós-graducação em Desenvolvimento FullStack - PUC-RJ
+Single page application feita para o Front-end do sprint 2 da Pós-graducação em Desenvolvimento FullStack - PUC-RJ
 
 Essa aplicação foi escrita usando React
+
+Trata-se de uma aplicação voltada para o encaminhamento de pedidos entre laboratórios da industria farmacêutica e drogarias para o atendimento de pacientes que necessitam de produtos especializados e/ou de alto custo.
 
 ## Link do protótipo
 https://www.figma.com/file/UT1xbZtPxRangUXBnSY3rB/Sprint2?type=design&node-id=0%3A1&mode=design&t=BdMemTHVmsWOurm1-1
