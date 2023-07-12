@@ -1,4 +1,4 @@
-# Front-End Sprint1 - FullStack Dev (PUC-Rio)
+# Front-End Sprint2 - FullStack Dev (PUC-Rio)
 
 Single page application feita para o Front-end do sprint 1 da Pós-graducação em Desenvolvimento FullStack - PUC-RJ
 
