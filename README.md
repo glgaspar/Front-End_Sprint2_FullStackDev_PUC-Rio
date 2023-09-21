@@ -25,6 +25,23 @@ Para iniciar o serviço em [http://localhost:3000](http://localhost:3000) é nec
 
 Ambos os comandos de instalação de dependências e execução devem ser executados no diretório raiz da aplicação.
 
+## Docker
+
+Construção da imagem Docker:
+
+```
+$ docker build -t frontend .
+```
+Execução do container:
+
+```
+$ docker run -p 3000:3000 frontend
+```
+
+Uma vez executando, para acessar a API, basta abrir o [http://localhost:3000/](http://localhost:3000/) no navegador.
+
+---
+
 ## Sobre os dados
 Nenhum dado presente representa uma venda real. Os dados foram gerados com o uso do ChatGPT para a atividade proposta no curso.
 
