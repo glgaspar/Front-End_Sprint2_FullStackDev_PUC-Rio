@@ -80,12 +80,10 @@ function Pedido() {
 				<h3 className="text-center text-xl mb-2">
 					Pedido Nº: {numPed}
 					{pedido && pedido.status === "ENVIADO" && (
-						<label
-							htmlFor={"Receita"}
-							className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange"
-						>
-							Cancelar Pedido
-						</label>
+						<button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
+							<BttnDialog texto="Cancelar Pedido" mensagem="Cancelar Pedido?" onClick={cancelaPedido}/>
+							</button>
+						
 					)}
 				</h3>
 				<hr className="border-accent-orange" />
