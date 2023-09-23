@@ -182,6 +182,7 @@ export default function NewOrder() {
 						.then((result) => {
 							console.log(result);
 							toast.success("Pedido cadastrado com sucesso!");
+							navigate("/home");
 						})
 						.catch(err => toast.error('Falha no registro do pedido. Favor entrar em contato com o administrador'));
 				} else {
@@ -191,8 +192,8 @@ export default function NewOrder() {
 			.catch(err => toast.error('CEP inválido.'))
 		} else if (flag === 0) {
 			console.log("Cancelado");
+			navigate("/home");
 		}
-		// navigate("/home");
 	};
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -228,7 +229,7 @@ export default function NewOrder() {
 					<hr className="border-accent-orange" />
 				</div>
 				<div className="mt-5 ml-5 mr-5 md:col-span-10 grid md:grid-cols-13 col-span-4 grid-cols-1 gap-5">
-					<div name="div" className="md:col-span-2">
+					<div name="div" className="md:col-span-2 grid">
 						<p htmlFor="Vendedor">Vendedor:</p>
 						<p name="Vendedor">{JSON.parse(sessionStorage.getItem('user')).user || ''}</p>
 					</div>
