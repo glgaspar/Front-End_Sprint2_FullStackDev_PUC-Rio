@@ -14,7 +14,7 @@ export default function BttnDialog(props) {
 			<span  onClick={() => setAberto(!aberto)}>{props.texto}</span>
 			<dialog
 				open={aberto}
-				className="fixed m-auto border rounded-xl bg-component-whitesmoke hover:cursor-default shadow-md"
+				className="z-50 fixed m-auto border rounded-xl bg-component-whitesmoke hover:cursor-default shadow-md"
 			>
 				<h1 className="mt-5">{props.mensagem}</h1>
 					<div className="grid grid-flow-col gird-cols-2 gap-5 m-5">
