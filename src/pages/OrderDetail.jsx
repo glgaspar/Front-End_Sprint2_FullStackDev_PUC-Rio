@@ -95,9 +95,9 @@ function Pedido() {
 						<button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
 							<BttnDialog texto="Cancelar Pedido" mensagem="Cancelar Pedido?" onClick={cancelaPedido}/>
 							</button>)
-							: <button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
+							: pedido.status === "CONFIRMADO" ?(<button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
 							<BttnDialog texto="Confirmar entrega" mensagem="Confirmar entrega?" onClick={entregaPedido}/>
-							</button>}
+							</button>) : <></>}
 				</h3>
 				<hr className="border-accent-orange" />
 				<div className="mt-5 mb-5 md:grid md:grid-cols-2 md:gap-5">
