@@ -46,7 +46,6 @@ function Pedido() {
 			.delete(`/venda/produto?numPedido=${numPedido}&codItem=${codItem}`)
 			.then((result)=>{
 				toast.success(result.data.message)
-				window.location.reload()
 			})
 			.catch(err=>{
 				console.log(err)
@@ -58,8 +57,19 @@ function Pedido() {
 		APIData(JSON.parse(sessionStorage.getItem('userToken')))
 			.delete(`/venda?numPedido=${numPed}`)
 			.then((result)=>{
-				toast.success(result.data.message)
-				window.location.reload()				
+				toast.success(result.data.message)				
+			})
+			.catch(err=>{
+				console.log(err)
+				toast.error(err.response.data.message)
+			})
+	}
+
+	function entregaPedido(){
+		APIData(JSON.parse(sessionStorage.getItem('userToken')))
+			.put(`/recebimento?numPedido=${numPed}`)
+			.then((result)=>{
+				toast.success(result.data.message)				
 			})
 			.catch(err=>{
 				console.log(err)
@@ -81,12 +91,13 @@ function Pedido() {
 			<div className="md:col-span-5 col-span-5 md:col-start-2 h-50 bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
 				<h3 className="text-center text-xl mb-2">
 					Pedido Nº: {numPed}
-					{pedido && pedido.status === "ENVIADO" && (
+					{pedido && pedido.status === "ENVIADO" ?(
 						<button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
 							<BttnDialog texto="Cancelar Pedido" mensagem="Cancelar Pedido?" onClick={cancelaPedido}/>
-							</button>
-						
-					)}
+							</button>)
+							: <button className="text-xs ml-5 p-2 bg-element-blue text-white rounded-xl cursor-pointer hover:bg-accent-orange">
+							<BttnDialog texto="Confirmar entrega" mensagem="Confirmar entrega?" onClick={entregaPedido}/>
+							</button>}
 				</h3>
 				<hr className="border-accent-orange" />
 				<div className="mt-5 mb-5 md:grid md:grid-cols-2 md:gap-5">
