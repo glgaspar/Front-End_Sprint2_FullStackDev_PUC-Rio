@@ -73,13 +73,16 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="md:col-span-5 col-span-4 m-5">
-							<h5 className="text-center md:text-lg md:mb-2">Pedidos</h5>
-					{compras.length > 0 && (
-						<TabelaSimples dados={obj} head={head} altura="65vh" onClick={routePedido}  dateTime={['dtEmissao']} />
-					)}
-						{/* <div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
-							<Pedidos pedidos={obj} />
-						</div> */}					
+				<div className="bg-component-whitesmoke p-2 rounded-xl shadow-md border border solid  mt-5">
+					
+								<h5 className="text-center md:text-lg md:mb-2">Pedidos</h5>
+						{compras.length > 0 && (
+							<TabelaSimples dados={obj} head={head} altura="65vh" onClick={routePedido} money={['vlTotal']} dateTime={['dtEmissao']} />
+						)}
+							{/* <div className="bg-component-whitesmoke p-5 rounded-xl shadow-md border border solid">
+								<Pedidos pedidos={obj} />
+							</div> */}				
+				</div>	
 				</div>
 				
 			</div>

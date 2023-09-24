@@ -46,6 +46,7 @@ function Pedido() {
 			.delete(`/venda/produto?numPedido=${numPedido}&codItem=${codItem}`)
 			.then((result)=>{
 				toast.success(result.data.message)
+				window.location.reload()
 			})
 			.catch(err=>{
 				console.log(err)
@@ -58,6 +59,7 @@ function Pedido() {
 			.delete(`/venda?numPedido=${numPed}`)
 			.then((result)=>{
 				toast.success(result.data.message)
+				window.location.reload()				
 			})
 			.catch(err=>{
 				console.log(err)
@@ -126,6 +128,7 @@ function Pedido() {
 							head={head}
 							onClick={routePedido}
 							altura="50vh"
+							money={['vlTotal']}
 							dateTime={['dtEmissao']}
 						/>
 					)}
