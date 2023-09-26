@@ -61,3 +61,5 @@ Por se tratar de uma aplicação integrada com outros sistemas:
 [Login_API](https://github.com/glgaspar/Login_API.git)
 
 Os caminhos das APIs utilizadas estão disponíveis no arquivo .env. Caso algum dos outros serviços não seja executado da forma indicada, os caminhos das APIs podem ser editados diretamente neste arquivo.
+
+As rotas estão fixadas usando o endereço interno do docker (host.docker.internal), então para executar os programas sem o uso do docker, será necessário alterar o caminho no arquivo .env.
