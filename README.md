@@ -44,7 +44,9 @@ Uma vez executando, para acessar a API, basta abrir o [http://localhost:3000/](h
 
 ### Acesso
 O usuário de teste cadastrado no sistema de login é:
+
 Login: teste@teste.com
+
 Senha: teste 
 
 ## Sobre os dados
